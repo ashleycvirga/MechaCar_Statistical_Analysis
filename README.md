@@ -1,2 +1,55 @@
 # MechaCar_Statistical_Analysis
 Using R in R Studio to perform statistical analysis on MechaCar data
+
+AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. AutosRUs’ sought to review the production data for insights that may help the manufacturing team.
+
+This project performs multiple linear regression analysis to identify which variables in the dataset predict the mpg of MechaCar prototypes, collects summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots, runs t-tests to determine if the manufacturing lots are statistically different from the mean population, and designs a statistical study to compare vehicle performance of the MechaCar vehicles against vehicles from other manufacturers. 
+
+## Linear Regression to Predict MPG
+
+The MechaCar_mpg.csv dataset contains mpg test results for 50 prototype MechaCars. The MechaCar prototypes were produced using multiple design specifications to identify ideal vehicle performance. Multiple metrics, such as vehicle length, vehicle weight, spoiler angle, drivetrain, and ground clearance, were collected for each vehicle. 
+
+This multiple linear regression model predicts the mpg of MechaCar prototypes using using all of the specification variables provided. 
+
+The null hypothesis states that the slope of the linear model is zero and thus any effects of the given variables on mpg can be explained by random chance. 
+
+The alternative hypothesis states that the slope of the linear model is not zero and thus the effects of one or more of the given variables on mpg cannot be explained by random chance. 
+
+The significance level used is a p-value of 0.05.
+
+![lm_function](https://github.com/ashleycvirga/MechaCar_Statistical_Analysis/blob/848f4f2114136c29ff32b9ecb6316048ac273984/Resources/lm_function.png)
+
+![summary_lm_function](https://github.com/ashleycvirga/MechaCar_Statistical_Analysis/blob/848f4f2114136c29ff32b9ecb6316048ac273984/Resources/summary_lm_function.png)
+
+### Based on this ouput, the variables "vehicle_length" and "ground_clearance" provided a non-random amount of varience to the mpg values in the dataset.
+
+vehicle_length: Pr(>|t|) = 2.60e-12 is statistically significant even at the highest level of scrutiny
+
+ground_clearance: Pr(>|t|) = 5.21e-08 is also statistically significant even at the highest level of scrutiny 
+
+The variables for vehicle_weight: Pr(>|t|) = 0.0776
+
+spoiler_angle: Pr(>|t|) = 0.3069
+                  
+and AWD: Pr(>|t|) = 0.1852
+              
+are not less than the statistical significance level of the p-value 0.05
+
+### The slope of this linear model is not considered to be zero
+
+With a p-value: 5.35e-11 we can reject the null hypothesis at the 95% confidence level.
+
+In other words, we can state thwith 95% confidence that the intercept term of -1.040e+02 determined by the model explains a significant amount of variability in the dependent variable (mpg) when all independent vairables(specifications) are equal to zero.
+
+### Considering the field of research we are dealing with here--vehicle manufacturing--this linear model ability to predict mpg of MechaCar prototypes is not quite as effective as we would like it to be.
+
+The Multiple R-squared value of 0.7149 tells us that about 71% of the variability in mpg can be explained by the model. 
+
+When manufacturing vehicles we would hope for a stronger accuracy level for the MechaCar's mpg than less than 3 in every 4 cars produced meeting the manufacturers fuel efficiency target.
+
+
+## Visualizations for the Trip Analysis
+
+The MechaCar Suspension_Coil.csv dataset contains the results from multiple production lots. In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots.
+
+### 
