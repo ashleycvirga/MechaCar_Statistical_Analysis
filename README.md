@@ -89,6 +89,24 @@ Lot 3, however, IS statistically different from the population mean. The p-value
 
 ## Study Design: MechaCar vs Competition
 
+### Overview
 
+The goal of this study is to test how MechaCar protoype stands up against the competition on metrics for yearly maintenence costs in order to improve its success in the marketplace. 
+
+### Study Design and Hypotheses
+
+Null Hypothesis: The difference between the yearly maintenance cost of MechaCar and  the yearly maintenance cost of a competitor's vehicle is equal to zero
+
+Alternative Hypothesis: The difference between the yearly maintenance cost of MechaCar and  the yearly maintenance cost of a competitor's vehicle is not equal to zero.
+
+### Statistical Testing
+
+We could do a Two Sample T-Test to compare the yearly maintenance cost of each competitor's vehicle against the MechaCar's yearly maintenance cost
+
+### Data
+
+In order to perform this study we would need to take a statistically significant number of competitive vehicles on the market, generate or aggregate data on their estimated yearly maintenance costs and compare each individual vehicle against the MechaCar
+
+We might also want to do some A/B testing to see if customers really care about yearly maintenance costs when making car purchasing decidions.
 
 
