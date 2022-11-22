@@ -67,5 +67,28 @@ However, when we look at the lot summary, it's clear that Lot3 has a varience of
 
 ## T-Tests on Suspension Coils
 
+The following t-tests on the suspension coil data were performed in order to determine if a sample mean is statistically different from the population mean of 1500 PSI. The first t-test analyzes the difference in the mean PSI for all 150 suspension coils in the data set. The second through the fourth t-tests analyze the difference in mean PSI for each of the three individual manufacturing lots: Lot1, Lot2 & Lot3. The p-value used to determine statistical significance here is 0.05.
 
-### 
+![total_t_test](https://github.com/ashleycvirga/MechaCar_Statistical_Analysis/blob/41568c425df94503ed62c0b620f9295ffba2c940/Resources/total_t_test.png)
+
+
+![lot_1_t_test](https://github.com/ashleycvirga/MechaCar_Statistical_Analysis/blob/41568c425df94503ed62c0b620f9295ffba2c940/Resources/lot_1_t_test.png)
+
+
+![lot_2_t_test](https://github.com/ashleycvirga/MechaCar_Statistical_Analysis/blob/41568c425df94503ed62c0b620f9295ffba2c940/Resources/lot_2_t_test.png)
+
+
+![lot_3_t_test](https://github.com/ashleycvirga/MechaCar_Statistical_Analysis/blob/41568c425df94503ed62c0b620f9295ffba2c940/Resources/lot_3_t_test.png)
+
+Based on these results, the mean of all 150 sampled suspension coils and the population mean of all suspension coils manufactured shows no statistical difference.
+
+Additionally, Lot 1 and Lot 2 sample means show no statistical difference from the population mean.
+
+Lot 3, however, IS statistically different from the population mean. The p-value from the t-test on Lot 3 is  0.04168 which is less than the p-value = 0.05 statistical significance level for this test. Lot 3 is statistically significantly different than the population of manufactured suspension coils.
+
+
+## Study Design: MechaCar vs Competition
+
+
+
+
