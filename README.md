@@ -48,8 +48,24 @@ The Multiple R-squared value of 0.7149 tells us that about 71% of the variabilit
 When manufacturing vehicles we would hope for a stronger accuracy level for the MechaCar's mpg than less than 3 in every 4 cars produced meeting the manufacturers fuel efficiency target.
 
 
-## Visualizations for the Trip Analysis
+## Summary Statistics on Suspension Coils
 
-The MechaCar Suspension_Coil.csv dataset contains the results from multiple production lots. In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots.
+The MechaCar Suspension_Coil.csv dataset contains the results from multiple production lots. In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots. 
+
+Below are the summary statistics of the suspension coils:
+
+![total_summary](https://github.com/ashleycvirga/MechaCar_Statistical_Analysis/blob/ebe95a927cbb93fa0f2e82f29ae8c90efa7e66e9/Resources/total_summary.png)
+
+![lot_summary](https://github.com/ashleycvirga/MechaCar_Statistical_Analysis/blob/ebe95a927cbb93fa0f2e82f29ae8c90efa7e66e9/Resources/lot_summary.png)
+
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch.
+
+The overall total_summary statistics show that the manufactured coils have a variance of 62.29356 which is within the design specifications.
+
+However, when we look at the lot summary, it's clear that Lot3 has a varience of 170.2861224 which does not meet the design specifications.
+
+
+## T-Tests on Suspension Coils
+
 
 ### 
